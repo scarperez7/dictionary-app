@@ -1,0 +1,9 @@
+body {
+  background-color: rgba(233, 203, 165, 0.836);
+}
+.App-header {
+  color: rgb(95, 53, 19);
+}
+.App-header h1 {
+  font-size: 50px;
+}
