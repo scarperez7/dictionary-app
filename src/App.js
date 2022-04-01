@@ -1,11 +1,18 @@
+import Dictionary from "./Dictionary";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="text-center p-5">Dictionary</h1>
+        <Dictionary />
       </header>
+      <footer>
+        Open Source code by{" "}
+        <a href="https://github.com/scarperez7" target="_blank">
+          Scarlett Perez
+        </a>
+      </footer>
     </div>
   );
 }
