@@ -9,7 +9,11 @@ export default function App() {
       </header>
       <footer>
         Open Source code by{" "}
-        <a href="https://github.com/scarperez7" target="_blank">
+        <a
+          href="https://github.com/scarperez7"
+          target="_blank"
+          rel="noreferrer"
+        >
           Scarlett Perez
         </a>
       </footer>
