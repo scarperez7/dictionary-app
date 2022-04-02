@@ -1,3 +1,4 @@
+import React from "react";
 import Dictionary from "./Dictionary";
 import "./App.css";
 
@@ -12,7 +13,7 @@ export default function App() {
         <a
           href="https://github.com/scarperez7"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Scarlett Perez
         </a>
