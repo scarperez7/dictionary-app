@@ -5,9 +5,9 @@ export default function Meaning(props) {
   if (props.meaning) {
     return (
       <div className="Meaning">
-        <h3>
+        <h6>
           <u>{props.meaning.partOfSpeech}</u>
-        </h3>
+        </h6>
         {props.meaning.definitions.map(function(definition, index) {
           return (
             <div key={index}>
