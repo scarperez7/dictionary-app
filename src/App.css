@@ -1,7 +1,11 @@
+.App {
+  background-color: rgb(170, 132, 103);
+  max-width: 960px;
+  margin: 0 auto;
+}
 body {
   background-color: rgb(170, 132, 103);
 }
-
 .App-header h1 {
   font-size: 50px;
 }
