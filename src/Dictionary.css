@@ -1,5 +1,5 @@
 .Dictionary section {
-  background-color: rgb(240, 230, 220);
+  background-color: rgb(214, 197, 179);
   border-radius: 10px;
   box-shadow: 0 5px 7px rgb(54, 38, 15, 0.4);
 }
@@ -8,6 +8,8 @@
   padding: 6px 10px;
   border-radius: 6px;
   border: 1px solid #231709;
+  background-color: rgba(230, 219, 202, 0.788);
+  color: rgb(44, 21, 3);
 }
 .hint {
   color: rgb(84, 153, 130);

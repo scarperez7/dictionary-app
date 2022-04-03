@@ -1,0 +1,8 @@
+li {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(44, 21, 3);
+  padding: 8px 5px;
+  border-radius: 15px;
+  margin: 5px;
+}

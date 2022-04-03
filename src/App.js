@@ -6,17 +6,17 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Dictionary defaultKeyword="swim" />
+        <Dictionary defaultKeyword="leaf" />
       </header>
       <footer>
-        Open Source code by{" "}
         <a
           href="https://github.com/scarperez7"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Scarlett Perez
+          Open Source code
         </a>
+        {""} by Scarlett Perez
       </footer>
     </div>
   );
