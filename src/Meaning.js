@@ -14,7 +14,7 @@ export default function Meaning(props) {
             <div key={index}>
               <div className="definition">{definition.definition}</div>
               <div className="example text-capitalize">
-                <em>{definition.example}</em>
+                <em> {definition.example}</em>
               </div>
             </div>
           );

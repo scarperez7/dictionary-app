@@ -4,7 +4,7 @@ import "./Photos.css";
 export default function Photos(props) {
   if (props.photos) {
     return (
-      <section className="Photos p-2 m-5 mt-3 mb-2">
+      <section className="Photos p-4 m-5 mt-3 mb-2">
         <div className="row">
           {props.photos.map(function(photos, index) {
             return (

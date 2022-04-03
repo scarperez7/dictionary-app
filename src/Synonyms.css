@@ -2,7 +2,13 @@ li {
   display: inline-block;
   text-decoration: none;
   border: 1px solid rgb(44, 21, 3);
-  padding: 8px 5px;
-  border-radius: 15px;
+  padding: 7px 6px;
+  border-radius: 17px;
   margin: 5px;
+}
+
+li:hover {
+  background-color: rgb(44, 21, 3);
+  color: rgb(214, 197, 179);
+  font-size: 20px;
 }
