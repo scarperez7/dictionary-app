@@ -4,9 +4,10 @@ import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-  let [keyword, Setkeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, Setkeyword] = useState(props.defaultKeyword);
   let [results, SetResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     SetResults(response.data[0]);
@@ -16,19 +17,38 @@ export default function Dictionary() {
     Setkeyword(event.target.value);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
-  return (
-    <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" onChange={handleWordChange} />
-      </form>
+  function HandleSumbit(event) {
+    event.preventDefault();
+    search();
+  }
 
-      <Results results={results} />
-    </div>
-  );
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <header>
+          <h1 className="text-center p-2 m-4 mb-0"> Search for a word </h1>
+        </header>
+        <section className="p-4  ms-5 me-5 mt-0">
+          <form onSubmit={HandleSumbit}>
+            <input type="search" className="mb-0" onChange={handleWordChange} />
+          </form>
+          <div className="hint">Suggested searches: hike, lawn, wine, yoga</div>
+        </section>
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loading...";
+  }
 }

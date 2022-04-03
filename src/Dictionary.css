@@ -1,3 +1,21 @@
-.Dictionary form {
-  text-align: center;
+.Dictionary section {
+  background-color: rgb(240, 230, 220);
+  border-radius: 10px;
+  box-shadow: 0 5px 7px rgb(54, 38, 15, 0.4);
+}
+.Dictionary input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #231709;
+}
+.hint {
+  color: rgb(84, 153, 130);
+  line-height: 20px;
+  font-size: 13px;
+}
+.Dictionary h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  color: rgb(44, 21, 3);
 }
