@@ -4,7 +4,7 @@
   box-shadow: 0 5px 7px rgb(54, 38, 15, 0.4);
 }
 .Dictionary input {
-  width: 100%;
+  width: 80%;
   padding: 6px 10px;
   border-radius: 6px;
   border: 1px solid #231709;
@@ -20,4 +20,16 @@
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   color: rgb(44, 21, 3);
+}
+.btn {
+  background-color: rgb(44, 21, 3);
+  border: 1px solid rgb(214, 197, 179);
+  color: rgb(214, 197, 179);
+  padding: 6px 10px;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  color: rgb(84, 153, 130);
 }

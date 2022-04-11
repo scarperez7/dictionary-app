@@ -54,6 +54,10 @@ export default function Dictionary(props) {
         <section className="p-4  ms-5 me-5 mt-0">
           <form onSubmit={HandleSumbit}>
             <input type="search" className="mb-0" onChange={handleWordChange} />
+            <button type="submit" className="btn" onChange={handleWordChange}>
+              {" "}
+              Submit{" "}
+            </button>
           </form>
           <div className="hint">Suggested searches: hike, lawn, wine, yoga</div>
         </section>
